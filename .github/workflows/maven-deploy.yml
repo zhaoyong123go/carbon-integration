@@ -28,7 +28,7 @@ jobs:
           gpg --list-secret-keys --keyid-format LONG
       - name: Configure Git user
         run: |
-          git config user.email "ci@wisefin.tech"
+          git config user.email "connect@wisefin.tech"
           git config user.name "GitHub Actions"
       - name: Publish package
         env:
