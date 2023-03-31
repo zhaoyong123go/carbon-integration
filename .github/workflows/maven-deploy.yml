@@ -26,13 +26,16 @@ jobs:
         run: |
           cat <(echo -e "${{ secrets.OSSRH_GPG_SECRET_KEY }}") | gpg --batch --import
           gpg --list-secret-keys --keyid-format LONG
-      - name: Configure Git user
-        run: |
-          git config user.email "connect@wisefin.tech"
-          git config user.name "GitHub Actions"
       - name: Publish package
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: mvn -DskipTests=true --batch-mode -Dgpg.passphrase=${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }} clean deploy
+      - name: Configure Git user
+        run: |
+          git config user.email "connect@wisefin.tech"
+          git config user.name "GitHub Actions"
+      - name: Prepare next release
+        run: mvn release:prepare release:perform -Darguments=-Dgpg.passphrase=${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }} -DskipTests=true -B 
+
