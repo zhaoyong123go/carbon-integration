@@ -11,6 +11,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - uses: actions/checkout@v2
       - name: Set up Maven Central Repository
         uses: actions/setup-java@v2
