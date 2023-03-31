@@ -17,7 +17,7 @@
   <parent>
     <groupId>com.zhibaocloud</groupId>
     <artifactId>carbon-integration</artifactId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.6</version>
   </parent>
 
   <artifactId>carbon-exchange</artifactId>
