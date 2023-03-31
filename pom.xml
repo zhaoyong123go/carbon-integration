@@ -28,8 +28,8 @@
 
   <scm>
     <url>https://github.com/zhibaocloud/carbon-integration</url>
-    <connection>scm:git:git://github.com/zhibaocloud/carbon-integration.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/zhibaocloud/carbon-integration.git</developerConnection>
+    <connection>scm:git:git://github.com/zhaoyong123go/carbon-integration.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/zhaoyong123go/carbon-integration.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
