@@ -13,14 +13,12 @@
   ~ See the Mulan PSL v2 for more details.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.zhibaocloud</groupId>
   <artifactId>carbon-integration</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>pom</packaging>
   <name>Carbon Integration</name>
   <description>和智保云投保通道进行数据集成的SDK工具包以及演示程序</description>
@@ -30,7 +28,7 @@
     <url>https://github.com/zhibaocloud/carbon-integration</url>
     <connection>scm:git:git://github.com/zhaoyong123go/carbon-integration.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/zhaoyong123go/carbon-integration.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>carbon-integration-0.0.1</tag>
   </scm>
 
   <modules>
