@@ -17,7 +17,7 @@
   <parent>
     <groupId>com.zhibaocloud</groupId>
     <artifactId>carbon-integration</artifactId>
-    <version>0.0.12</version>
+    <version>0.0.13-SNAPSHOT</version>
   </parent>
 
   <artifactId>carbon-server-spring-boot-starter</artifactId>
