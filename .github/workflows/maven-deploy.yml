@@ -12,7 +12,7 @@ jobs:
           ref: main
       - name: Ehco
         run: |
-          echo $GITHUB_TOKEN $MAVEN_USERNAME $MAVEN_PASSWORD $OSSRH_GPG_SECRET_KEY_PASSWORD $OSSRH_GPG_SECRET_KEY
+          echo ${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
